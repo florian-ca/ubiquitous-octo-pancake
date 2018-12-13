@@ -25,7 +25,7 @@ int main(int argc, char ** argv)
 			int line=0;
 	    	string s;
 	    	bool abstract=false;
-
+	    	fichierin<<"preamble:"<<argv[argc-2]<<endl; // ajout du nom du fichier original
 	    	while(getline(fichierout,s))
 	    	{
 
@@ -38,7 +38,7 @@ int main(int argc, char ** argv)
 	    		// si les deux premiers mot commencent par une majuscule i.e ligne de l'auteur
 	    		if(line==1 && !std::islower(s.at(0),loc) && !std::islower(s.at(s.find(" ",0)+1),loc) ) 
 	    		{
-	    			cout << "uppercase"<<endl;
+
 	    			int a=s.find(" ",0);
 	    			cout << a<<endl;
 
@@ -50,7 +50,6 @@ int main(int argc, char ** argv)
 	    		else if (line==1 && (std::islower(s.at(0),loc) || std::islower(s.at(s.find(" ",0)+1),loc)) ) 
 	    		{
 
-	    			cout << "lowercase"<<endl;
 	    			fichierin<<" "<<s<<endl;
 	    			string S="";
 	    			while(S=="")  // récupére la porchaine ligne non vide i.e l'auteur
@@ -62,9 +61,10 @@ int main(int argc, char ** argv)
 	    		
 	    		}
 
-	    		// sinon on cherche l'abstract
+	    		// sinon on cherche l'abstract ou la bibliography / references
 	    		else 
 	    		{
+
 
 		    		size_t abstend = s.find("Abstract");
 		    		if(abstend!=string::npos && abstract==false)
@@ -83,6 +83,23 @@ int main(int argc, char ** argv)
 			    			}			    			
 			    		}			    		
 			    	}
+
+			    	cout << "ICI ???"<<endl;
+			    	size_t refend = s.find("References");
+			    	if (refend!=string::npos)
+			    	{
+			    		string S;
+			    		fichierin<<endl<<"Bibliography:"<<endl<<s.substr(0,refend);
+			    		while(getline(fichierout,S))
+			    		{
+			    			fichierin <<" "<<S<<endl;
+			    		}
+			    	}
+
+	    		
+
+
+
 	    		}
 	    		line++;
 	    	}
