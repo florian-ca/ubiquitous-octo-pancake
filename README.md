@@ -47,15 +47,8 @@ fileOutput.txt le fichier de sortie
 
 ## Notes
 
-Le parser fonctionne pour les fichiers(preamble + title + author + abstract) :
+Le parser fonctionne pour les fichiers (preamble + title + author + abstract+ bibliography, avec les options -t et -x):
 * Lin_2004_Rouge.pdf
-* Doyle_2005_Automatic Categorization of Author Gender.pdf
-* Torres-Moreno_2012_Artex is another text summarizer.pdf
-* Levner_2007_Fuzzifying clustering algorithms The case study of MajorClust.pdf
-* Alexandrov_2015_A Modified Tripartite Model for Document Representation in Internet Sociology.pdf
-* Mikolov_2013_Distributed representations of words and phrases and their compositionality.pdf
-
-et pour la bilbliographie le parser fonctionne pour 
 * Doyle_2005_Automatic Categorization of Author Gender.pdf
 * Torres-Moreno_2012_Artex is another text summarizer.pdf
 * Levner_2007_Fuzzifying clustering algorithms The case study of MajorClust.pdf
