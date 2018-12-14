@@ -1,3 +1,4 @@
+
 # Parseur PDF
 
 TP CERI - Génie Logiciel Scrum - Parseur d’articles scientifiques en format texte 
@@ -32,11 +33,15 @@ $ g++ -std=c++11 parserpdf.cpp -o parserpdf
 
 Lancer le programme :
 ```
-$ ./parserpdf pdftotext fileName.pdf fileOutput.txt
+$ ./parserpdf -x pdftotext fileName.pdf fileOutput.xml
+$ ./parserpdf -t pdftotext fileName.pdf fileOutput.txt
 
 avec :
 filename.pdf le nom du fichier à parser (au format pdf)
 fileOutput.txt le fichier de sortie
+
+-x : Résultat en XML
+-t : Résultat en texte
 ```
 
 
@@ -50,7 +55,7 @@ Le parser fonctionne pour les fichiers(preamble + title + author + abstract) :
 * Alexandrov_2015_A Modified Tripartite Model for Document Representation in Internet Sociology.pdf
 * Mikolov_2013_Distributed representations of words and phrases and their compositionality.pdf
 
-et pour la bilbliography le parser fonctionne pour 
+et pour la bilbliographie le parser fonctionne pour 
 * Doyle_2005_Automatic Categorization of Author Gender.pdf
 * Torres-Moreno_2012_Artex is another text summarizer.pdf
 * Levner_2007_Fuzzifying clustering algorithms The case study of MajorClust.pdf
