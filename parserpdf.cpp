@@ -108,6 +108,17 @@ int main(int argc, char ** argv)
 			    		if (!option) fichierin<<"</Abstract>";	    		
 			    	}
 			    	
+			    	size_t introend =s.find("Introduction")
+			    	if (!option) fichierin << "<Introduction>";
+			    	String stockPreviousLine;
+			    	while(getline(fichierout,ligneIntro))
+			    	{
+			    		stockPreviousLine=ligneIntro;
+			    		if (s.compare("")==0) // si la ligne
+			    		{
+			    			
+			    		}
+			    	}
 
 			    	size_t refend = s.find("References");
 			    	if (refend!=string::npos)
@@ -127,7 +138,6 @@ int main(int argc, char ** argv)
 
 	    		}
 	    		line++;
-
 	    	}
 	    	if (!option) fichierin<<endl<<"</Article>"<<endl;
 	   
