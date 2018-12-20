@@ -105,20 +105,32 @@ int main(int argc, char ** argv)
 			    				fichierin<<" "<<s;
 			    			}			    			
 			    		}		
-			    		if (!option) fichierin<<"</Abstract>";	    		
+			    		if (!option) fichierin<<"</Abstract>"<<endl;	    		
 			    	}
 			    	
-			    	size_t introend =s.find("Introduction")
-			    	if (!option) fichierin << "<Introduction>";
-			    	String stockPreviousLine;
-			    	while(getline(fichierout,ligneIntro))
+			    	
+			    	size_t introend =s.find("Introduction");
+			    	if (introend!=string::npos)
 			    	{
-			    		stockPreviousLine=ligneIntro;
-			    		if (s.compare("")==0) // si la ligne
-			    		{
-			    			
-			    		}
-			    	}
+				    	if (!option) fichierin << "<Introduction>"<<s.substr(0,introend);
+				    	string stockPreviousLine="Introduction",ligneIntro;
+				    	while(getline(fichierout,ligneIntro))
+				    	{
+				    		
+				    		cout << "ici"<<stockPreviousLine.back()<<"." <<endl;
+				    		if ( ligneIntro.compare("")==0 && (stockPreviousLine.back()=='.' || stockPreviousLine.size()<2) ) // si la ligne est vide et que la ligne précédente se termine par un point
+				    		{
+				    			cout<<"la"<<endl;
+				    			break;
+				    		}
+				    		else 
+				    		{
+				    			fichierin<<ligneIntro<<endl;
+				    			stockPreviousLine=ligneIntro;
+				    		}
+				    	}
+				    	if (!option) fichierin<<"</Introduction>"<<endl;
+					}
 
 			    	size_t refend = s.find("References");
 			    	if (refend!=string::npos)
@@ -131,7 +143,6 @@ int main(int argc, char ** argv)
 			    		{
 
 			    			if (S.size()>=2 ) fichierin <<" "<<S<<endl;
-			    			cout << S.size()<<endl;
 			    		}
 			    		if(!option) fichierin<<"</Bibliography>";
 			    	}
