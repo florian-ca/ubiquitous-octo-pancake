@@ -10,47 +10,40 @@
 
 using namespace std;
 
-string funct(string op, bool &option)
-{
-	if (op.compare("-t")==0)
-	{
-		option=true;
-		return "fileParsed.txt";
-	}
-	else if (op.compare("-x")==0)
-	{
-		option=false;
-		return "fileParsed.xml";
-	}
-	else return "fileError";
-} 
 
-int main(int argc, char ** argv)
+
+void parserpdf(string source,string destination,string optionString)
 {
 	bool option; // if true = text ; if false = xml
-	int status;
-	string op=argv[1];
-	ofstream fichierin(funct(op,option));
-	pid_t pid= fork();
-	
-	
-	
 
-	if(pid>0)
+
+
+	if (optionString.compare("-t")==0)
 	{
-		wait(&status);
-		ifstream fichierout(argv[argc-1]);
+		option=true;
+
+	}
+	else if (optionString.compare("-x")==0)
+	{
+		option=false;
+	}
+
+	
+	ofstream fichierin(destination,ios::trunc);
+	
+	ifstream fichierout(source);
 		
+
 	    if(fichierout && fichierin)
 	    {
 			int line=0;
 	    	string s;
 	    	bool abstract=false;
-	    	if (option) fichierin<<"preamble:"<<argv[argc-2]<<endl; // ajout du nom du fichier original
-	    	else fichierin<<"<Article>"<<endl<<"<preamble>"<<argv[argc-2]<<"</preamble>"<<endl;
+	    	if (option) fichierin<<"preamble:"<< source <<endl; // ajout du nom du fichier original
+	    	else fichierin<<"<Article>"<<endl<<"<preamble>"<< source <<"</preamble>"<<endl;
 	    	while(getline(fichierout,s))
 	    	{
-
+	    		cout <<  "getline"<<endl;
 	    		std::locale loc("C");
 	    		if(line==0) // 1er ligne = ligne du titre
 	    		{
@@ -157,10 +150,10 @@ int main(int argc, char ** argv)
 	    {
 	    	  cerr <<"erreur d ouverture"<< endl;
 	    }	      
-	}
+}
 
-	else if(pid==0)
-	{
-		execvp(argv[1],&argv[1]);
-	}		
+
+int main()
+{
+	parserpdf("alex.txt","alex.xml","-x");
 }
