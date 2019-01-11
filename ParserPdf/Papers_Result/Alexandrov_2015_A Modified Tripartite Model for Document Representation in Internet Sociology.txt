@@ -1,0 +1,67 @@
+preamble:draft
+Titre: A Modified Tripartite Model for Document Representation in Internet Sociology
+Auteur: Mikhail Alexandrov1,2 , Vera Danilova1,2(B) , and Xavier Blanco1
+Resumé de l'article: tripartite model of actors, concepts and instances for document representation in the study of social networks. We propose a modified model, where instead of document authors we consider textual mentions of persons and institutions as actors. This representation proves to be more appropriate for the solution of a range of Internet Sociology tasks. In the paper we describe experiments with the modified model and provide some background on the tools that can be used to build it. The model is tested on the experimental corpora of Russian news (educational domain). The research reflects the pilot study findings. Keywords: Tripartite model · Document representation Social networks analysis · Internet sociology
+The automatic detection of document and corpus topic is one of the most popular tasks within the natural language processing. The traditional model, where
+each document is represented by a vector describing the distribution of keywords
+in a document or corpus, works quite well. On the basis of this representation,
+it becomes possible to group similar documents and reveal the corpus structure,
+as well as to group keywords and build topic vocabularies [6,11]. Considering
+each document as an ontology instance and a set of keywords as a concept, we
+obtain a two-layer ontology model. The appearance of social networks allowed
+the researchers to bring in the social aspect, thus creating a tripartite model
+of ontology for Social Networks Analysis containing document authors (actors),
+document content (instances), and tags (concepts) [13]. Three-layer model is
+a tool for studying the emergence and dynamics of communities on the basis
+of user-generated content. Author proﬁling gave an opportunity to analyze the
+Under partial support of the Catholic University of San Pablo (grant FINCyTPERU).
+c Springer International Publishing Switzerland 2015
+
+Q. Chen et al. (Eds.): DEXA 2015, Part II, LNCS 9262, pp. 323–330, 2015.
+DOI: 10.1007/978-3-319-22852-5 27
+
+324
+
+M. Alexandrov et al.
+
+Bibliography:
+ 1. Alexandrov, M.: Development of general methodology for analysis of public opinion
+ of Internet-community and its application to given topics (authority, economy,
+ corruption, etc.) on the basis of Data/Text Mining tools. Report on State project
+ 84, RPANEPA [rus] (2013)
+ 2. Alexandrov, M., Beresneva, D., Makarov, A.: Dynamic vocabularies as a tool for
+ studying social processes. In: Proceedings of the 6th International Conference on
+ Intelligent Information and Engineering Systems, ITHEA Publishing, vol. 27, pp.
+ 88–92 (2014)
+ 3. Alexandrov, M., Danilova, V., Koshulko, A., Tejada, J.: Models for opinion classification of blogs taken from Peruvian Facebook. In: Proceedings of the 4th International Conference on Inductive Modeling (ICIM-2013), Kyiv, Ukraine Publishing
+ House ITRC-NASU (Ukraine) & Czech Technical University pp. 241–246 (2013)
+ 4. Alexandrov, M., Gelbukh, A., Rosso, P.: An approach to clustering abstracts.
+ In: Montoyo, A., Muñoz, R., Métais, E. (eds.) NLDB 2005. LNCS, vol. 3513,
+ pp. 275–285. Springer, Heidelberg (2005)
+ 5. Alexandrov, M., Gelbukh, A., Makagonov, P.: Evaluation of thematic structure
+ of multidisciplinary documents and document flows. In: Proceedings of the 11th
+ International DEXA Workshop (Database and Expert System Applications), pp.
+ 125–129 (2000)
+ 6. Baeza-Yates, R., Ribero-Neto, B.: Modern Information Retrieval. Addison Wesley,
+ Boston (1999)
+ 7. Bishop, C.: Pattern Recognition and Machine Learning. Springer, Berkeley (2006)
+ 8. Danilova, V., Alexandrov, M., Blanco, X.: A survey of multilingual event extraction
+ from text. In: Métais, E., Roche, M., Teisseire, M. (eds.) NLDB 2014. LNCS,
+ vol. 8455, pp. 85–88. Springer, Heidelberg (2014)
+ 9. Danilova V., Popova S.: Socio-political event extraction using a rule-based approach. In: Meersman, R., Panetto, H., Mishra, A., Valencia-Garcia, R., Soares, A.L.,
+ Ciuciu, I., Ferri, F., Weichhart, G., Moser, T., Bezzi, M., Chan, H. (eds.) Proceedings
+ of the 13th International Conference on Ontologies, DataBases and Applications of
+ Semantics (ODBASE’2014), vol 8842, pp. 537–546, Springer (2014)
+ 10. Gelbukh, A., Sidorov, G., Guzman-Arenas, A.: Use of a weighted topic hierarchy for
+ document classification. In: Matoušek, V., et al. (eds.) TSD 1999. LNCS (LNAI),
+ vol. 1692, pp. 133–138. Springer, Heidelberg (1999)
+ 11. Manning, C., Raghavan, P., Schutze, H.: Introduction to Information Retrieval.
+ Cambridge University Press, Cambridge (2008)
+ 12. Eissen, S.M., Stein, B.: Analysis of clustering algorithms for web-based search.
+ In: Karagiannis, D., Reimer, U. (eds.) PAKM 2002. LNCS (LNAI), vol. 2569, pp.
+ 168–178. Springer, Heidelberg (2002)
+ 13. Mika, P.: Ontologies are us: a unified model of social networks and semantics. J.
+ Web Semant. Sci. Serv. Agents World Wide Web 5(1), 5–15 (2007)
+ 14. Stein, B., Niggemann, O.: On the nature of structure and its identification. In:
+ Widmayer, P., Neyer, G., Eidenbenz, S. (eds.) WG 1999. LNCS, vol. 1665, p. 122.
+ Springer, Heidelberg (1999)

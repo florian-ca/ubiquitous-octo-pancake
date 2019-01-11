@@ -1,0 +1,57 @@
+<Article>
+<preamble>draft</preamble>
+<Titre>Information Processing and Management 43 (2007) 1606–1618</Titre><Titre2>www.elsevier.com/locate/infoproman</Titre2>
+
+<Auteur>Beyond SumBasic: Task-focused summarization with</Auteur>
+<Abstract> In recent years, there has been increased interest in topic-focused multi-document summarization. In this task, automatic summaries are produced in response to a speciﬁc information request, or topic, stated by the user. The system we have designed to accomplish this task comprises four main components: a generic extractive summarization system, a topic-focusing component, sentence simpliﬁcation, and lexical expansion of topic words. This paper details each of these components, together with experiments designed to quantify their individual contributions. We include an analysis of our results on two large datasets commonly used to evaluate task-focused summarization, the DUC2005 and DUC2006 datasets, using automatic metrics. Additionally, we include an analysis of our results on the DUC2006 task according to human evaluation metrics. In the human evaluation of system summaries compared to human summaries, i.e., the Pyramid method, our system ranked ﬁrst out of 22 systems in terms of overall mean Pyramid score; and in the human evaluation of summary responsiveness to the topic, our system ranked third out of 35 systems. Ó 2007 Elsevier Ltd. All rights reserved. Keywords: Summarization; Multi-document summarization; Sentence simpliﬁcation; Lexical expansion; Query expansion; NLP</Abstract>
+<Introduction>1. In recent years, there has been increased interest in topic-focused multi-document summarization. In this
+task, automatic summaries are produced in response to a speciﬁc information request, or topic, stated by
+the user. In response to this interest and to stimulate research in this area, the National Institute of Standards
+and Technology (NIST) conducted a series of workshops, the Document Understanding Conference2 (DUC),
+to provide large-scale common data sets for the evaluation of systems. Participants in DUC2005 and
+DUC2006 were provided with a topic and a set of relevant documents (newswire articles), and the task was
+*
+</Introduction>
+
+<Bibliography>
+ Brockett, C., & Dolan, W. B. (2005). Support vector machines for paraphrase identiﬁcation and corpus construction. In Proceedings of the
+ third international workshop on paraphrasing (IWP2005), Jeju, Republic of Korea.
+ Conroy, J. M., Schlesinger, J., & Goldstein Stewart, J. (2005). CLASSY query-based multi-document summarization. In Proceedings of
+ DUC 2005.
+ Daumé, H., III, & Marcu, D. (2005a). Bayesian multi-document summarization at MSE. In Proceedings of MSE 2005.
+ Daumé, H., III, & Marcu, E. (2005b). Bayesian summarization at DUC and a suggestion for extrinsice evaluation. In Proceedings of DUC
+ 2005.
+ Dolan, W. B., Quirk, C., & Brockett, C. (2004). Unsupervised construction of large paraphrase corpora: exploiting massively parallel news
+ sources. In Proceedings of COLING 2004, Geneva, Switzerland.
+ Dorr, B., Zajic, D., & Schwartz, R. (2003). Hedge trimmer: a parse-and-trim approach to headline generation. In Proceedings of HLTNAACL 2003 text summarization workshop (pp. 1–8).
+ Dunlavy, D., Conroy, J., Schlesinger, J., Goodman, S., Okurowski, M., O’Leary, E., et al. (2003). Performance of a three-stage system for
+ multi-document summarization. In Proceedings of DUC 2003.
+ Fellbaum, C. (Ed.). (1998). WordNet: An electronic lexical database. The MIT Press.
+ Jing, H., & McKeown, K. (2000). Cut and past based text summarization. In Proceedings of the 1st conference of the North American
+ Chapter of the Association for Computational Linguistics (NAACL’00).
+ Lin, C. Y. (2004). ROUGE: a package for automatic evaluation of summaries. In Proceedings of the workshop on text summarization
+ branches out, 25–26 July 2004, Barcelona, Spain.
+ Luhn, H. P. (1958). The automatic creation of literature abstracts. IBM Journal of Research and Development, 2(2), 159–165.
+ Mitra, M., Singhal, A., & Buckley, C. (1998). Improving automatic query expansion. In Proceedings of the 21st Annual International ACMSIGIR conference on research and development in information retrieval.
+ Moore, R. C. (2001). Towards a simple and accurate statistical approach to learning translation relationships among words. In
+ Proceedings, workshop on data-driven machine translation, Toulouse, France.
+ Moore, R. C. (2004). Association-based bilingual word alignment. In Proceedings, workshop on building and using parallel texts: datadriven machine translation and beyond, Ann Arbor, MI.
+ Nenkova, A., & Vanderwende, L. (2005). The impact of frequency on summarization. MSR-TR-2005-101.
+ Nenkova, A., Vanderwende, L., & McKeown, K. (2006). A compositional context sensitive multidocument summarizer. In Proceedings of
+ SIGIR 2006.
+ Nenkova, A., & Passonneau, R. (2004). Evaluating content selection in summarization: the Pyramid method. In Proceedings of the HLTNAACL 2004.
+ Och, F. J., & Ney, H. (2003). A systematic comparison of various statistical alignment models. Computational Linguistics, 29(1), 19–52.
+ Quirk, C., Brockett, C., & Dolan, W. B. (2004). Monolingual machine translation for paraphrase generation. In Proceedings of the 2004
+ conference on empirical methods in natural language processing, 25–26 July 2004, Barcelona Spain (pp. 142–149).
+ Ringger, E., Moore, R. C., Charniak, E., Vanderwende, L., & Suzuki, H. (2004). Using the Penn treebank to evaluate non-treebank
+ parsers. In Proceedings of LREC 2004.
+ Rooney, K. (2001). Encarta Thesaurus. Bloomsbury Publishing.
+ 1618
+ L. Vanderwende et al. / Information Processing and Management 43 (2007) 1606–1618
+ Siddharthan, A., Nenkova, A., & McKeown, K. (2004). Syntactic simpliﬁcation for improving content selection in multi-document
+ summarization. In Proceedings of COLING 2004.
+ Voorhees, E. (1988). Using WordNet for text retrieval. In C. Fellbaum (Ed.), WordNet: An electronic lexical database. The MIT Press.
+ Zajic, D., Dorr, B., Lin, J., Monz, C., & Schwartz, R. (2005). A sentence-trimming approach to multi-document summarization. In
+ Proceedings of DUC2005.
+</Bibliography>
+</Article>
