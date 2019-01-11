@@ -61,3 +61,5 @@ Et également pours ces fichiers avec quelques erreurs en fonction des catégori
 
 Les autres fichiers sont trop compliqués à parser.
 Soit le titre n'est pas sur la premiere ligne soit l'auteur n'est pas directement après le titre.
+
+N.B ne pas essayer de parser le fichier "Furui_2004_Speech-to-text and speech-to-speech summarization of spontaneous speech.pdf" ce dernier fair planter le menu
