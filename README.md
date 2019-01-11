@@ -54,5 +54,10 @@ Le parser fonctionne pour les fichiers (preamble + title + author + abstract+ bi
 * Alexandrov_2015_A Modified Tripartite Model for Document Representation in Internet Sociology.pdf
 * Mikolov_2013_Distributed representations of words and phrases and their compositionality.pdf
 
+Et également pours ces fichiers avec quelques erreurs en fonction des catégories:
+* Gonzalez_2018_Automated Sentence Boundary Detection in Modern StandardArabic Transcripts using Deep Neural Networks.pdf
+* Vanderwende_2007_Beyond SumBasic.pdf
+
+
 Les autres fichiers sont trop compliqués à parser.
 Soit le titre n'est pas sur la premiere ligne soit l'auteur n'est pas directement après le titre.
