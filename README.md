@@ -23,24 +23,16 @@ Nous avons utilisé C++ pour développer le parser. Nous utilisons aussi des com
 
 ## Compiler
 
-Commande de compilation :
+Commande de compilation (dans le fichier ParserPdf/code):
 ```
-$ g++ -std=c++11 parserpdf.cpp -o parserpdf
+make
 ```
 
 ## Utilisation 
 
 Lancer le programme :
 ```
-$ ./parserpdf -x pdftotext fileName.pdf fileOutput.xml
-$ ./parserpdf -t pdftotext fileName.pdf fileOutput.txt
-
-avec :
-filename.pdf le nom du fichier à parser (au format pdf)
-fileOutput.txt le fichier de sortie
-
--x : Résultat en XML
--t : Résultat en texte
+./ParserPdf
 ```
 
 
