@@ -13,7 +13,7 @@ using namespace std;
 
 
 
-void parserpdf(string source,string destination,string optionString)
+void parser(string source,string destination,string optionString)
 {
 	bool option; // if true = text ; if false = xml
 
@@ -173,10 +173,4 @@ void parserpdf(string source,string destination,string optionString)
 	    {
 	    	  cerr <<"erreur d ouverture"<< endl;
 	    }	      
-}
-
-
-int main()
-{
-	parserpdf("vand.txt","vand.xml","-x");
 }
